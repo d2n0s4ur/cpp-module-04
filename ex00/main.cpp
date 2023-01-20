@@ -6,7 +6,7 @@
 /*   By: jnoh <jnoh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 21:12:38 by jnoh              #+#    #+#             */
-/*   Updated: 2023/01/20 21:26:53 by jnoh             ###   ########.fr       */
+/*   Updated: 2023/01/20 22:17:22 by jnoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,16 @@ int main()
 	j->makeSound();
 	meta->makeSound();
 
+    // Mort tests
+    const Animal    *test;
+    test = j;
+    test->makeSound();
+    test = i;
+    test->makeSound();
+
     delete meta;
     delete i;
     delete j;
-	return 0;
+
+	return (0);
 }
