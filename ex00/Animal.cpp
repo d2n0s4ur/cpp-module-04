@@ -6,7 +6,7 @@
 /*   By: jnoh <jnoh@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 20:54:38 by jnoh              #+#    #+#             */
-/*   Updated: 2023/01/20 21:25:51 by jnoh             ###   ########.fr       */
+/*   Updated: 2023/01/20 22:14:01 by jnoh             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,5 @@ std::string const   &Animal::getType( void ) const
 
 void    Animal::makeSound( void ) const
 {
+    std::cout << "I don't know what sound this animal makes." << std::endl;
 }
